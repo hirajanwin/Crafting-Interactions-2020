@@ -1,5 +1,5 @@
 # Crafting Interactions 2020
-Taught by: [Wentinbg Zhang](https://interactiondesign.sva.edu/people/faculty/wenting-zhang)
+Taught by: [Wenting Zhang](https://interactiondesign.sva.edu/people/faculty/wenting-zhang)
 
 [Course Curriculum](https://www.notion.so/8e80b2981a504a90ae03bf5d26fc2024?v=033d5740709f4b4baf788eb3bf6a7d5b)
 
