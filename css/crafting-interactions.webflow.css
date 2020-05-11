@@ -10,7 +10,7 @@
 .title-sans {
   margin-top: 0px;
   margin-bottom: 0px;
-  font-family: Oswald, sans-serif;
+  font-family: 'Oswald VF', sans-serif;
   font-size: 82px;
   line-height: 1.33em;
   font-weight: 300;
@@ -20,7 +20,7 @@
 .subtitle-sans {
   margin-top: 0px;
   margin-bottom: 0px;
-  font-family: Oswald, sans-serif;
+  font-family: 'Oswald VF', sans-serif;
   font-size: 22px;
   line-height: 1.5em;
   font-weight: 400;
@@ -30,7 +30,15 @@
 .subtitle-sans.subtitle-with-line {
   display: inline-block;
   margin-bottom: 1.55em;
-  border-bottom: 2px solid #000;
+  border-style: none none solid;
+  border-width: 1px 1px 2px;
+  border-color: #000;
+  background-color: #f3f3f3;
+}
+
+.subtitle-sans.subtitle-with-line.subtitle-input {
+  width: 100%;
+  text-align: center;
 }
 
 .subtitle-sans.subtitle-sans-margin {
@@ -51,6 +59,7 @@
 .subtitle-serif.paragraph {
   margin-top: 56px;
   line-height: 1.2em;
+  font-weight: 500;
 }
 
 .body {
@@ -208,7 +217,7 @@
 }
 
 @font-face {
-  font-family: 'Oswald';
+  font-family: 'Oswald VF';
   src: url('../fonts/Oswald.ttf') format('truetype');
   font-weight: 400;
   font-style: normal;
