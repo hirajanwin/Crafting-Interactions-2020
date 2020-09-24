@@ -1,0 +1,125 @@
+@keyframes subTitleWave {
+  0% {
+    font-variation-settings: 'wght' 400; 
+  }
+  30% {
+    font-variation-settings: 'wght' 1000; 
+  }
+  80% {
+    font-variation-settings: 'wght' 0; 
+  }
+  100% {
+    font-variation-settings: 'wght' 400; 
+  }
+}
+@keyframes titleWave {
+  0% {
+    font-variation-settings: 'wght' 300; 
+  }
+  35% {
+    font-variation-settings: 'wght' 1000; 
+  }
+  85% {
+    font-variation-settings: 'wght' 0; 
+  }
+  100% {
+    font-variation-settings: 'wght' 300; 
+  }
+}
+
+::selection {
+  color: white;
+  background: black;
+}
+
+.title-sans {
+  font-variation-settings: 'wght' 300; 
+}
+.subtitle-sans {
+  font-variation-settings: 'wght' 400; 
+}
+.column-left:hover .title-sans span {
+  animation: titleWave 2s ease infinite;
+}
+.card-project:hover .subtitle-sans span {
+  animation: subTitleWave 2s ease infinite;
+}
+.search-box {
+  position: relative;
+  color: black;
+}
+.search-box input {
+  outline: none;
+}
+
+.search-box input::placeholder {
+  color: black;
+  transition: color 0.3s ease;
+}
+.search-box input:focus::placeholder {
+  color: rgba(0,0,0,0.5);
+}
+.search-box input:invalid {
+  box-shadow: none;
+}
+.search-box input:not(:valid) ~ .close-button {
+  display: none;
+}
+.search-box input:not(:valid) ~ .search-icon {
+  display: block;
+}
+.search-box .search-icon {
+  display: none;
+  width: 18px; 
+  height: 18px;
+  position: absolute;
+  top: 9px;
+  right: 0;
+}
+.search-box .search-icon:before {
+  content: '';
+  position: absolute;
+  width: 9px;
+  height: 9px;
+  box-sizing: border-box;
+  border: solid 2px currentColor;
+  border-radius: 50%;
+  top: 3px;
+  left: 3px;
+}
+.search-box .search-icon:after {
+  content: '';
+  position: absolute;
+  top: 10px;
+  left: 9px;
+  width: 2px;
+  height: 5px;
+  background-color: currentColor;
+  border-radius: 1px;
+  transform: rotate(-45deg);
+  transform-origin: 1px top;
+}
+.search-box .close-button {
+  cursor: pointer;
+  width: 18px;
+  height: 18px;
+  position: absolute;
+  top: 9px;
+  right: 0;
+}
+.search-box .close-button:before,
+.search-box .close-button:after {
+  content: "";
+  display: block;
+  width: 2px;
+  height: 14px;
+  background-color: currentColor;
+  border-radius: 1px;
+  position: absolute;
+  top: 2px;
+  left: 8px;
+  transform: rotate(45deg);
+}
+.search-box .close-button:before {
+  transform: rotate(-45deg);
+}
